@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.color-cycle {
+
+    font-family: 'Roboto', sans-serif;
+  
+    width:100%;
+  
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100%;
+  
+    color:#313131;
+    font-size:12vw;
+    font-weight: bold;
+  
+    -webkit-animation:colorchange 6s infinite alternate;
+  
+  
+  }
+  
+  @-webkit-keyframes colorchange {
+    0% {
+  
+      color: #F44336;
+    }
+  
+    10% {
+  
+      color: #E91E63;
+    }
+  
+    20% {
+  
+      color: #9C27B0;
+    }
+  
+    30% {
+  
+      color: #673AB7;
+    }
+  
+    40% {
+  
+      color: #3F51B5;
+    }
+  
+    50% {
+  
+      color: #2196F3;
+    }
+  
+    60% {
+  
+      color: #00BCD4;
+    }
+  
+    70% {
+  
+      color: #009688;
+    }
+    80% {
+  
+      color: #4CAF50;
+    }
+  
+    90% {
+  
+      color: #CDDC39;
+    }
+  
+    100% {
+  
+      color: #FFC107;
+    }
+  }
+  
+  .roboto-white{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 4vw;
+  }
+  .roboto-white-small{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 2vw;
+  }

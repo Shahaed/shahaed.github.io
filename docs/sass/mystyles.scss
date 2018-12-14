@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// Set your brand colors
+$github_purple: #6e5494;
+$github_purple-invert: findColorInvert($github_purple) !default;
+$linkedin_blue: #0077B5;
+$linkedin_blue-invert: findColorInvert($linkedin_blue) !default;
+$pink: #db3498;
+$pink_invert: findColorInvert($pink) !default;
+$message-header-padding: 0em 0em;
+
+
+$custom-colors:("github": ($github_purple, $github_purple-invert), "linkedin": ($linkedin_blue, $linkedin_blue-invert), "pink": ($pink, $pink_invert));
+
+@import "../../node_modules/bulmaswatch/darkly/variables";
+@import "../../node_modules/bulma/bulma.sass";
+@import "../../node_modules/bulmaswatch/darkly/overrides";
+@import "../../node_modules/bulma-timeline/src/sass/index.sass";
+
+.collapsible-message {
+    @extend .message;
+}
+
+.collapsible-message-header {
+    @extend .message-header;
+    border-radius: 4px 4px 4px 4px;
+}
+.active, .collapsible-message-header:hover {
+    @extend .message-header;
+    background-color: $danger;
+    border-radius: 4px 4px 4px 4px;
+}
+.collapsible-message-header:after {
+    @extend .message-header;
+
+}
+.collapsible-message-body {
+    @extend .message-body;
+}
