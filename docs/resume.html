@@ -32,9 +32,11 @@
     <link rel="manifest" href="favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <script src="scripts.js"></script>
-</head>
-
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script></head>
 <body>
 
 <section id="header"class="section">
@@ -69,7 +71,13 @@
 <h1 class="title is-1 has-text-link has-text-centered">Resume</h1>
 
 <section class="section" id="resume">
-    <div class="container has-text-centered">
+    <div class="tabs is-centered is-fullwidth" id="resume-type">
+            <ul>
+                <li class="is-active" id="tech_tab"><a>Tech</a></li>
+                <li id="general_tab"><a>General</a></li>
+            </ul>
+    </div>
+    <div class="container is-flex-mobile has-text-centered">
         <iframe src="https://drive.google.com/file/d/1swW5DfhhXtEjam3yZxcOdZuB2Ff5CXVU/preview" width="960" height="1080"></iframe>
     </div>
 </section>
