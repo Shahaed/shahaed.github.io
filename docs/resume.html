@@ -37,6 +37,7 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <script src="js/jquery.js"></script></head>
+    <script src="js/resume_scripts.js"></script>
 <body>
 
 <section id="header"class="section">
@@ -68,17 +69,17 @@
     </header>
 </section>
 
-<h1 class="title is-1 has-text-link has-text-centered">Resume</h1>
+<h1 class="title is-1 has-text-light has-text-centered">Resume</h1>
 
 <section class="section" id="resume">
     <div class="tabs is-centered is-fullwidth" id="resume-type">
             <ul>
-                <li class="is-active" id="tech_tab"><a>Tech</a></li>
-                <li id="general_tab"><a>General</a></li>
+                <li class="item is-active" data-option="1" id="tech_tab"><a>Software Resume (Written with <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>)</a></li>
+                <li class="item" data-option="2" id="general_tab"><a>General Resume <span class="latex"><sup></sup><sub></sub></span> </a></li>
             </ul>
     </div>
     <div class="container is-flex-mobile has-text-centered">
-        <iframe src="https://drive.google.com/file/d/1swW5DfhhXtEjam3yZxcOdZuB2Ff5CXVU/preview" width="960" height="1080"></iframe>
+        <iframe id="resume_iframe" src="https://drive.google.com/file/d/1wFPo6M3ZZME4rwGepetDUgsXbc0eqXpB/preview" width="960" height="1080"></iframe>
     </div>
 </section>
 
