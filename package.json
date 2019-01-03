@@ -6,7 +6,8 @@
   "dependencies": {
     "bulma": "^0.7.2",
     "bulma-timeline": "^3.0.0",
-    "bulmaswatch": "^0.7.2"
+    "bulmaswatch": "^0.7.2",
+    "prettier": "^1.15.3"
   },
   "devDependencies": {},
   "scripts": {
