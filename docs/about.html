@@ -1,192 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>About Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118290570-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-118290570-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-118290570-1');
+      gtag("config", "UA-118290570-1");
     </script>
-    <link rel="stylesheet" href="css/mystyles.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <link rel="stylesheet" href="css/mystyles.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicon/ms-icon-144x144.png"
+    />
     <!-- <script src="scripts.js"></script> -->
     <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/jquery.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <section id="header" class="section">
+      <header class="container">
+        <nav
+          class="navbar is-transparent"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <div id="navbarBrand" class="navbar-brand">
+            <a class="navbar-item" href="http://shahaed.me">
+              <img src="favicon/white-icon-192x192.png" alt="Logo" />
+            </a>
+            <a
+              role="button"
+              class="navbar-burger "
+              data-target="navbarMenu"
+              aria-label="menu"
+              aria-expanded="false"
+            >
+              <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
 
-<section id="header"class="section">
-    <header class="container">
-
-        <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-
-            <div id="navbarBrand" class="navbar-brand">
-                <a class="navbar-item" href="http://shahaed.me">
-                    <img src="favicon/white-icon-192x192.png" alt="Logo">
-                </a>
-                <a role="button" class="navbar-burger " data-target="navbarMenu" aria-label="menu" aria-expanded="false">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="index.html">Home</a>
+              <a class="navbar-item" href="projects.html">Projects</a>
+              <a class="navbar-item is-active" href="about.html">About Me</a>
             </div>
-
-            <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-end">
-                    <a class="navbar-item" href="index.html">Home</a>
-                    <a class="navbar-item" href="projects.html">Projects</a>
-                    <a class="navbar-item is-active" href="about.html">About Me</a>
-                </div>
-            </div>
-
+          </div>
         </nav>
-    </header>
-</section>
+      </header>
+    </section>
 
-<div class="container">
-    <div class="columns">
-            <div class="column">
-                <h1 class="title is-1 has-text-left has-text-pink has-text-weight-bold" style="padding-left: 2%;">About Shahaed</h1>
-                <h2 class="subtitle" style="padding-left: 2%;">And Some Polaroids</h2>
-            </div>
-            <div class="column">
-                <p class="is-size-5 has-text-justified" style="padding-left: 2%;">
-                    I am a recent
-                    <span class="has-text-warning">engineering grad </span> who likes to 
-                    <span class="has-text-danger">code and build software</span> that impacts people.
-                    I also like <span class="has-text-info">outreach and human engagement</span>.
-                    And I’m a formally trained <span class="has-text-success">scientist</span>.
-                </p>
-            </div>
-        </div>
-</div>
-
-<br>
-<section class= "section" id="body">
     <div class="container">
-        <div class="columns">
-            <div class="column">
-                <figure class="image is-1by3">
-                    <img src="images/pol_coll.png">
-                </figure>
-            </div>
-            <div class="column is-two-thirds">
-                <div class="content has-text-justified">
-
-                    <article id="My Education">
-                        <h2 class="is-size-3">My Education</h2>
-                        <p>
-                            I graduated from the <span class="">University of Iowa</span> in 2018 with undergraduate degrees in 
-                            <span class="is-italic has-text-weight-semibold">Biomedical Engineering,</span> <span class="is-italic has-text-weight-semibold">Chemistry, Biochemistry</span>, 
-                            and minors in <span class="is-italic has-text-weight-semibold">Computer Science</span> and <span class="is-italic has-text-weight-semibold">Mathematics.</span></p>
-                    </article>
-                    <br>
-
-                    <article id="My Interests">
-                        <h2 class="is-size-3">My Interests</h2>
-                        <p>
-                            My background is in <span class="">life and health sciences</span>.
-                            So I love working on tech that innovates these fields!
-                            I also like <span class="">collaborating on projects</span> with other devs and contributing to anything <span class="">open source</span>.
-                        </p>
-                        <p>
-                            In addition, I love reading and <span class="">talking science</span>! I host a weekly <span class="">radio show</span>
-                             where we bring on guests to elucidate a new topic with the goal to <span class="">increase scientific literacy</span>.
-                        </p>
-                        <p>And I'm an avid <span class="">snowboarder</span> 🏂. When there isn't snow a longboard usually suffices.</p>
-                    </article>
-                    <br>
-                    
-                    <article id="My Skills" class="collapsible-message">
-                        <div class="collapsible-message-header">
-                            <p class="is-size-3">My Tech Skills</p>
-                        </div>
-                        <div class="collapsible-message-body">
-                            <div class="columns">
-                                <div class="column"> 
-                                    <h4 class="has-text-weight-bold">Languages</h4>
-                                    <ul>
-                                        <li> <span class="has-text-weight-semibold">Type</span><span class="has-text-weight-light">Script</span> </li>
-                                        <li>Java &nbsp; <span><i class="fab fa-java"></i></span></li>
-                                        <li>Python &nbsp; <span><i class="fab fa-python"></i></span></li>
-                                        <li>SQL &nbsp; <span><i class="fas fa-database"></i></span></li>
-                                        <ul>
-                                            <li>MySQL</li>
-                                            <li>PL/PgSQL</li>
-                                        </ul>
-                                        <li><span>Javascript</span> &nbsp; <i class="fab fa-js-square"></i> </li>
-                                        <li> Web &nbsp; <i class="fab fa-html5"></i> &nbsp; <i class="fab fa-css3"></i> &nbsp; <i class="fab fa-sass"></i> </li>
-                                        <li>Bash Scripting &nbsp; <i class="fas fa-terminal"></i></li>
-                                        <li>C/C++ &nbsp; <i class="fas fa-code"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="column">
-                                    <h4 class="has-text-weight-bold">Technologies & Frameworks</h4>
-                                    <ul>
-                                        <li>Node.js &nbsp; <i class="fab fa-node-js"></i></li>
-                                        <ul>
-                                            <li>Express</li>
-                                            <li>Socket.io</li>
-                                        </ul>
-                                        <li>Cloud Services &nbsp; <i class="fas fa-cloud"></i></li>
-                                        <ul>
-                                            <li>AWS &nbsp; <i class="fab fa-aws"></i></li>
-                                            <li>Firebase & GCP &nbsp; <i class="fab fa-google"></i></li>
-                                        </ul>
-                                        <li>Django</li>
-                                        <li>Docker &nbsp; <i class="fab fa-docker"></i></li>
-                                        <li>Jenkins CI &nbsp; <i class="fab fa-jenkins"></i></li>
-                                        <li><span>Git</span> &nbsp; <i class="fas fa-code-branch"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article id="Anecdotes">
-                        <h2 class="is-size-3">Anecdotes</h2>
-                        <p>
-                            Still writing these 🤔 Come back later!
-                        </p>
-                        <p>Enjoy this stylized picture till then 😊</p>
-                        <figure class="image is 3by1">
-                            <img src="images/BigSkyCartoon.png">
-                        </figure>
-                    </article>
-
-                </div>
-            </div>
+      <div class="columns">
+        <div class="column">
+          <h1
+            class="title is-1 has-text-left has-text-pink has-text-weight-bold"
+            style="padding-left: 2%;"
+          >
+            About Shahaed
+          </h1>
+          <h2 class="subtitle" style="padding-left: 2%;">And Some Polaroids</h2>
         </div>
+        <div class="column">
+          <p class="is-size-5 has-text-justified" style="padding-left: 2%;">
+            I am a recent
+            <span class="has-text-warning">engineering grad </span> who likes to
+            <span class="has-text-danger">code and build software</span> that
+            impacts people. I also like
+            <span class="has-text-info">outreach and human engagement</span>.
+            And I’m a formally trained
+            <span class="has-text-success">scientist</span>.
+          </p>
+        </div>
+      </div>
     </div>
-</section>
 
+    <br />
+    <section class="section" id="body">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <figure class="image is-1by3">
+              <img src="images/pol_coll.png" />
+            </figure>
+          </div>
+          <div class="column is-two-thirds">
+            <div class="content has-text-justified">
+              <article id="My Education">
+                <h2 class="is-size-3">My Education</h2>
+                <p>
+                  I graduated from the
+                  <span class="">University of Iowa</span> in 2018 with
+                  undergraduate degrees in
+                  <span class="is-italic has-text-weight-semibold"
+                    >Biomedical Engineering,</span
+                  >
+                  <span class="is-italic has-text-weight-semibold"
+                    >Chemistry, Biochemistry</span
+                  >, and minors in
+                  <span class="is-italic has-text-weight-semibold"
+                    >Computer Science</span
+                  >
+                  and
+                  <span class="is-italic has-text-weight-semibold"
+                    >Mathematics.</span
+                  >
+                </p>
+              </article>
+              <br />
 
-</body>
+              <article id="My Interests">
+                <h2 class="is-size-3">My Interests</h2>
+                <p>
+                  My background is in
+                  <span class="">life and health sciences</span>. So I love
+                  working on tech that innovates these fields! I also like
+                  <span class="">collaborating on projects</span> with other
+                  devs and contributing to anything
+                  <span class="">open source</span>.
+                </p>
+                <p>
+                  In addition, I love reading and
+                  <span class="">talking science</span>! I host a weekly
+                  <span class="">radio show</span> where we bring on guests to
+                  elucidate a new topic with the goal to
+                  <span class="">increase scientific literacy</span>.
+                </p>
+                <p>
+                  And I'm an avid <span class="">snowboarder</span> 🏂. When
+                  there isn't snow a longboard usually suffices.
+                </p>
+              </article>
+              <br />
+
+              <article id="My Skills" class="collapsible-message">
+                <div class="collapsible-message-header is-active">
+                  <p class="is-size-3">My Tech Skills</p>
+                </div>
+                <div class="collapsible-message-body">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="has-text-weight-bold">Languages</h4>
+                      <ul>
+                        <li>
+                          <span class="has-text-weight-semibold">Type</span
+                          ><span class="has-text-weight-light">Script</span>
+                        </li>
+                        <li>
+                          Java &nbsp; <span><i class="fab fa-java"></i></span>
+                        </li>
+                        <li>
+                          Python &nbsp;
+                          <span><i class="fab fa-python"></i></span>
+                        </li>
+                        <li>
+                          SQL &nbsp;
+                          <span><i class="fas fa-database"></i></span>
+                        </li>
+                        <ul>
+                          <li>MySQL</li>
+                          <li>PL/PgSQL</li>
+                        </ul>
+                        <li>
+                          <span>Javascript</span> &nbsp;
+                          <i class="fab fa-js-square"></i>
+                        </li>
+                        <li>
+                          Web &nbsp; <i class="fab fa-html5"></i> &nbsp;
+                          <i class="fab fa-css3"></i> &nbsp;
+                          <i class="fab fa-sass"></i>
+                        </li>
+                        <li>
+                          Bash Scripting &nbsp; <i class="fas fa-terminal"></i>
+                        </li>
+                        <li>C/C++ &nbsp; <i class="fas fa-code"></i></li>
+                      </ul>
+                    </div>
+                    <div class="column">
+                      <h4 class="has-text-weight-bold">
+                        Technologies & Frameworks
+                      </h4>
+                      <ul>
+                        <li>Node.js &nbsp; <i class="fab fa-node-js"></i></li>
+                        <ul>
+                          <li>Express</li>
+                          <li>Socket.io</li>
+                        </ul>
+                        <li>
+                          Cloud Services &nbsp; <i class="fas fa-cloud"></i>
+                        </li>
+                        <ul>
+                          <li>AWS &nbsp; <i class="fab fa-aws"></i></li>
+                          <li>
+                            Firebase & GCP &nbsp; <i class="fab fa-google"></i>
+                          </li>
+                        </ul>
+                        <li>Django</li>
+                        <li>Docker &nbsp; <i class="fab fa-docker"></i></li>
+                        <li>
+                          Jenkins CI &nbsp; <i class="fab fa-jenkins"></i>
+                        </li>
+                        <li>
+                          <span>Git</span> &nbsp;
+                          <i class="fas fa-code-branch"></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article id="Anecdotes">
+                <h2 class="is-size-3">Anecdotes</h2>
+                <p>Still writing these 🤔 Come back later!</p>
+                <p>Enjoy this stylized picture till then 😊</p>
+                <figure class="image is 3by1">
+                  <img src="images/BigSkyCartoon.png" />
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

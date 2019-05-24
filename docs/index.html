@@ -38,61 +38,70 @@
     crossorigin="anonymous"></script>
     <script src="js/jquery.js"></script></head>
 <body>
+<canvas id="canvas" style="z-index: -1; position: absolute; left: 0; right: 0; top: 0; bottom: 0"></canvas>
 
-<section id="header"class="section">
-
-    <header class="container">
-
-        <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-
-            <div id="navbarBrand" class="navbar-brand">
-                <a class="navbar-item" href="http://shahaed.me">
-                    <img src="favicon/white-icon-192x192.png" alt="Logo">
-                </a>
-                <a role="button" class="navbar-burger " data-target="navbarMenu" aria-label="menu" aria-expanded="false">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-
-            <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-end">
-                    <a class="navbar-item is-active" href="index.html">Home</a>
-                    <a class="navbar-item" href="projects.html">Projects</a>
-                    <a class="navbar-item" href="about.html">About Me</a>
+<div id="overlay" style="position: absolute; z-index: 10">
+    <section id="header" class="section">
+    
+        <header class="container">
+    
+            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    
+                <div id="navbarBrand" class="navbar-brand">
+                    <a class="navbar-item" href="http://shahaed.me">
+                        <img src="favicon/white-icon-192x192.png" alt="Logo">
+                    </a>
+                    <a role="button" class="navbar-burger " data-target="navbarMenu" aria-label="menu"
+                        aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
                 </div>
+    
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item is-active" href="index.html">Home</a>
+                        <a class="navbar-item" href="projects.html">Projects</a>
+                        <a class="navbar-item" href="about.html">About Me</a>
+                    </div>
+                </div>
+    
+            </nav>
+        </header>
+    </section>
+    
+    
+    <section id="body" class="section">
+    
+        <div class="container">
+            <div class="column">
+                <p class="roboto-white">
+                    hello, my name is
+                </p>
+                <h1 class="color-cycle">
+                    Shahaed <p style="text-indent: 25vw">Hasan</p>
+                </h1>
+                <p class="roboto-white-small has-text-right">
+                    software engineer. bio engineer. science communicator.
+                </p>
             </div>
-
-        </nav>
-    </header>
-</section>
-
-<section id="body" class="section">
-
-    <div class="container">
-        <div class="column">
-            <p class="roboto-white">
-                hello, my name is
-            </p>
-            <h1 class="color-cycle">
-                Shahaed <p style="text-indent: 25vw">Hasan</p>
-            </h1>
-            <p class="roboto-white-small has-text-right">
-                software engineer. bio engineer. science communicator.
-            </p>
         </div>
-    </div>
+    
+        <br>
+        <div class="container has-text-centered">
+            <a href="resume.html" class="button is-outlined is-danger" role="button">Resume</a>
+            <a href="https://github.com/shahaed" class="button is-outlined is-github" role="button">Github &nbsp <i
+                    class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/shahaed" class="button is-outlined is-linkedin" role="button">LinkedIn &nbsp <i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://devpost.com/Shahaed" class="button is-outlined is-link" role="button">Devpost</a>
+        </div>
+    
+    
+    </section>
+</div>
+<script src="js/fluid_webgl.js"></script>
 
-    <br>
-    <div class="container has-text-centered">
-        <a href="resume.html" class="button is-outlined is-danger" role="button">Resume</a>
-        <a href="https://github.com/shahaed" class="button is-outlined is-github" role="button">Github &nbsp <i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/shahaed" class="button is-outlined is-linkedin" role="button">LinkedIn &nbsp <i class="fab fa-linkedin"></i></a>
-        <a href="https://devpost.com/Shahaed" class="button is-outlined is-link" role="button">Devpost</a>
-    </div>
-
-
-</section>
 </body>
 </html>
